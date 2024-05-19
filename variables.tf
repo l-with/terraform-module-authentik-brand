@@ -9,14 +9,14 @@ variable "authentik_token" {
   sensitive   = true
 }
 
-variable "authentik_tenant_domain" {
-  description = "the domain for selecting the authentik default tenant"
+variable "authentik_brand_domain" {
+  description = "the domain for selecting the authentik default brand"
   type        = string
   default     = "authentik-default"
 }
 
-variable "authentik_tenant_default" {
-  description = "if the authentik default tenant should become default"
+variable "authentik_brand_default" {
+  description = "if the authentik default brand should become brand"
   type        = bool
   default     = false
 }
